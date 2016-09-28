@@ -21,6 +21,8 @@ ejm_rcparams.prettify_axes(ax)
 cs = iter(ejm_rcparams.set2)
 
 plot_sets = [
+    ScanPlotSet(glob('/Volumes/Backup/bannock_data/Model2D_dim=2,seed=1,dt=0.1,L=2.5e+03,dx=40.3,c_D=1e+03,c_sink=0.01,c_source=1,v_0=20,p_0=1,D_rot=0.2,origin_flag=0,rho_0=0.001,chi=all,onesided_flag=1,force_mu=0,vicsek_R=0,walls=Traps_dim=2,L=2.5e+03,dx=40.3,n=1,d=40.3,w=282,s=80.6/M*'),
+                'Single trap', next(cs)),
     ScanPlotSet(glob('/Volumes/Backup/bannock_data/Model2D_dim=2,seed=1,dt=0.1,L=2.5e+03,dx=40.3,c_D=1e+03,c_sink=0.01,c_source=1,v_0=20,p_0=1,D_rot=0.2,origin_flag=0,rho_0=0.001,chi=all,onesided_flag=1,force_mu=0,vicsek_R=0,walls=Traps_dim=2,L=2.5e+03,dx=40.3,n=5,d=40.3,w=282,s=80.6/*'),
                 'Multiple traps', next(cs)),
     ScanPlotSet(glob('/Volumes/Backup/bannock_data/Model2D_dim=2,seed=1,dt=0.1,L=2.5e+03,dx=40.3,c_D=1e+03,c_sink=0.01,c_source=1,v_0=20,p_0=1,D_rot=0.2,origin_flag=0,rho_0=0.001,chi=all,onesided_flag=1,force_mu=0,vicsek_R=0,walls=Maze_dim=2,L=2.5e+03,dx=40.3,d=40,seed=1/*'),
